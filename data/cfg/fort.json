@@ -1,0 +1,31 @@
+{
+	"ip_plain" : "37.230.210.89:27016",
+	"ip_nice" : "TF.ZO-ZO.ORG:27016",
+	"discuss_url" : "http://zo-zo.org/forum/threads/298/",
+	"translation" : {
+		"ru" : {
+			"server_list" : [
+				"Режим: Захват флага.",
+				"Только карта ctf_2fort.",
+				"Максимум игроков: 24.",
+				"Быстрое возрождение после смерти.",
+				"Голосование за включение/отключение случайных критов.",
+				"Ограничения на одновременно используемые классы персонажей.",
+				"В конце раунда показывает лучших игроков проигравшей команды.",
+				"Показывает, кто вас убил, из какого оружия, сколько здоровья осталось."
+			]
+		},
+		"en" : {
+			"server_list" : [
+				"Map ctf_2fort only.",
+				"Maximum players: 24.",
+				"Mode: Capture the Flag.",
+				"Fast respawn after death.",
+				"Voting for random critical hits. Turn on/off.",
+				"Limits on used characters classes (class limits).",
+				"Shows best players of the losing team at the end of the round.",
+				"Shows who killed you, weapon and how many health left on attacker."
+			]
+		}
+	}
+}

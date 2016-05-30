@@ -1,0 +1,23 @@
+{
+	"ip_plain" : "78.139.77.165:27023",
+	"ip_nice" : "ZO-ZO.ORG:27023",
+	"discuss_url" : "http://zo-zo.org/forum/threads/301/",
+	"translation" : {
+		"ru" : {
+			"server_list" : [
+				"Максимум игроков: 16.",
+				"Новый соревновательный режим.",
+				"Забеги Громилами по специальным трассам на время.",
+				"<a href=\"http://zo-zo.org/charger-race/\">Результаты забегов</a>."
+			]
+		},
+		"en" : {
+			"server_list" : [
+				"Maximum players: 16.",
+				"New competitive mode.",
+				"Charger races on a special track at a time.",
+				"<a href=\"http://zo-zo.org/charger-race/\">Races results</a>."
+			]
+		}
+	}
+}

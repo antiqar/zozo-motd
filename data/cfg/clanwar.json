@@ -1,0 +1,33 @@
+{
+	"ip_plain" : "78.139.77.165:27019",
+	"ip_nice" : "ZO-ZO.ORG:27019",
+	"discuss_url" : "http://zo-zo.org/forum/threads/35/",
+	"translation" : {
+		"ru" : {
+			"server_list" : [
+				"Режим: Сражение.",
+				"Максимум игроков: 8 + 2 зрителя.",
+				"Игроки выбирают голосованием следующую кампанию.",
+				"Установлен Confogl. Используйте команду: !match режим.",
+				"Режимы 4 на 4: eq, esl, fresh, hunters, metafogl, metalight.",
+				"Режимы 3 на 3: fresh3v3, meta3v3, hunter3v3.",
+				"Режимы 2 на 2: 2v2, fresh2v2, meta2v2, hunter2v2.",
+				"Режимы 1 на 1: 1v1, meta1v1, deadman.",
+				"Доступные команды: !ready, !unready, !pause, !unpause, !spechud, !tankhud."
+			]
+		},
+		"en" : {
+			"server_list" : [
+				"Mode: Versus.",
+				"Maximum players: 8 + 2 spectators.",
+				"Players can choose next campaign by vote.",
+				"Confogle ready. Use command: !match mode.",
+				"4 vs 4 modes: eq, esl, fresh, hunters, metafogl, metalight.",
+				"3 vs 3 modes: fresh3v3, meta3v3, hunter3v3.",
+				"2 vs 2 modes: 2v2, fresh2v2, meta2v2, hunter2v2.",
+				"1 vs 1 modes: 1v1, meta1v1, deadman.",
+				"Available commands: !ready, !unready, !pause, !unpause, !spechud, !tankhud."
+			]
+		}
+	}
+}

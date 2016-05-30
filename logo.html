@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<style>
+		body {
+			margin: 0; position: absolute;
+			top: 0; bottom: 0; right: 0; left: 0;
+			background-size: cover; background-position: top;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body></body>
+<script>
+	set_image( document.querySelector( 'body' ) );
+	function set_image(el) {
+		var lang = getCookie( 'zozo_motd_lang' );
+		if( lang &&  lang !== 'ru' ) {
+			el.style.backgroundImage = 'url(data/img/logo-big-' + lang + '.jpg)';
+		}
+		else {
+			el.style.backgroundImage = 'url(data/img/logo-big-ru.jpg)';
+		}
+	}
+	function getCookie( cname ) {
+		var name = cname + '=';
+		var ca = document.cookie.split( ';' );
+		for( var i = 0; i < ca.length; i++ ) {
+			var c = ca[i].trim();
+			if( c.indexOf( name ) == 0 ) return c.substring( name.length, c.length );
+		}
+		return '';
+	}
+</script>
+</html>

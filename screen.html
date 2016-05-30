@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<style>
+		#menu select { margin: 4px; font-size: 18px; }
+		body { margin: 0; font-size: 18px; -webkit-user-select: none; }
+		#motd, #logo { position: absolute; margin: 0; border: none; }
+		#logo { top: 40px; left: 102px; width: 337px; height: 68px; }
+		#motd { top: 187px; left: 100px; width: 600px; height: 300px; }
+		#menu label {
+			margin: 4px; padding: 1px 6px 2px 2px;
+			background: white; border: 1px solid darkgrey;
+		}
+		#menu a {
+			display: inline-block; margin: 4px; padding: 1px 5px;
+			font-family: sans-serif; color: black; background: white;
+			border: 1px solid darkgrey; text-decoration: none;
+		}
+		#menu {
+			position: fixed; top: 10px; left: -200px; padding: 10px;
+			background: lightgrey; border: 1px solid white;
+			opacity: 0.3; transition: all ease 0.3s;
+			z-index: 1;
+		}
+		#menu:hover { left: 10px; opacity: 1; }
+	</style>
+</head>
+
+<body>
+
+<div id="menu">
+	<select name="game" id="game" onChange="menuChanged(this)">
+		<option value="l4d2">L4D2</option>
+		<option value="tf">TF2</option>
+	</select>
+	<select name="resolution" id="resolution" onChange="menuChanged(this)">
+		<option value="800x600">800x600</option>
+		<option value="1024x768">1024x768</option>
+		<option value="1280x720">1280x720</option>
+		<option value="1366x768">1366x768</option>
+		<option value="1280x1024">1280x1024</option>
+		<option value="1920x1080">1920x1080</option>
+	</select>
+	<label>
+		<input id="vip" type="checkbox" checked onChange="menuChanged(this)">VIP
+	</label><br>
+	<select name="server" id="server" onChange="menuChanged(this)">
+		<option value="bf1">BLOOD FACTORY #1</option>
+		<option value="bf2">BLOOD FACTORY #2</option>
+		<option value="bf3">BLOOD FACTORY #3</option>
+		<option value="bf4">BLOOD FACTORY #4</option>
+		<option value="bf5">BLOOD FACTORY #5</option>
+		<option value="m1">MULTITANKS VERSUS</option>
+		<option value="e1">EXTRA VERSUS #1</option>
+		<option value="e2">EXTRA VERSUS #2</option>
+		<option value="coop">EXTREME COOP 4+</option>
+		<option value="mut">MUTATIONS</option>
+		<option value="clanwar">CLANWAR CONFOGL</option>
+		<option value="race">CHARGER RACE</option>
+		<option value="pl">PAYLOAD MAPS</option>
+		<option value="dust">DUSTBOWL ONLY</option>
+		<option value="fort">2FORT ONLY</option>
+	</select><br>
+	<a href="/" onClick="resetAdv();return false;">SHOW ADVERTISEMENT</a>
+</div>
+
+<iframe id="logo" src="logo.html" scrolling="no"></iframe>
+<iframe id="motd" src="index.html?srv=bf1&vip=l4d2" scrolling="no"></iframe>
+<img id="screen" src="screen/l4d2/800x600.jpg" alt="screen">
+
+<script>
+	var frame_pos = {
+		_800x600 : {
+			l4d2 : {
+				logo : { top : 40, left : 102, width : 337, height : 68 },
+				motd : { top : 187, left : 100, width : 600, height : 300 }
+			},
+			tf : { top : 93, left : 170, width : 518, height : 368 }
+		},
+		_1024x768 : {
+			l4d2 : {
+				logo : { top : 51, left : 132, width : 432, height : 88 },
+				motd : { top : 240, left : 128, width : 768, height : 384 }
+			},
+			tf : { top : 120, left : 218, width : 664, height : 472 }
+		},
+		_1280x720 : {
+			l4d2 : {
+				logo : { top : 48, left : 283, width : 405, height : 82 },
+				motd : { top : 225, left : 280, width : 720, height : 360 }
+			},
+			tf : { top : 112, left : 364, width : 622, height : 442 }
+		},
+		_1366x768 : {
+			l4d2 : {
+				logo : { top : 51, left : 303, width : 432, height : 88 },
+				motd : { top : 240, left : 299, width : 768, height : 384 }
+			},
+			tf : { top : 120, left : 389, width : 664, height : 472 }
+		},
+		_1280x1024 : {
+			l4d2 : {
+				logo : { top : 68, left : 133, width : 576, height : 117 },
+				motd : { top : 320, left : 128, width : 1024, height : 512 }
+			},
+			tf : { top : 160, left : 248, width : 885, height : 629 }
+		},
+		_1920x1080 : {
+			l4d2 : {
+				logo : { top : 72, left : 424, width : 607, height : 123 },
+				motd : { top : 337, left : 420, width : 1080, height : 540 }
+			},
+			tf : { top : 168, left : 546, width : 933, height : 663 }
+		}
+	};
+
+	var motd = document.querySelector( '#motd' );
+
+	function menuChanged( el ) {
+		var motd_pos, logo_pos;
+		var logo = document.querySelector( '#logo' );
+		var game = document.querySelector( '#game' );
+		var server = document.querySelector( '#server' );
+		var screen = document.querySelector( '#screen' );
+		var vip = document.querySelector( '#vip' ).checked;
+		var resolution = document.querySelector( '#resolution' );
+
+		game = game.options[game.selectedIndex].value;
+		server = server.options[server.selectedIndex].value;
+		resolution = resolution.options[resolution.selectedIndex].value;
+
+		if( el.id == 'vip' ) vip = el.checked;
+		else if( el.id == 'game' ) game = el.options[el.selectedIndex].value;
+		else if( el.id == 'resolution' ) resolution = el.options[el.selectedIndex].value;
+		else if( el.id == 'server' ) server = el.options[el.selectedIndex].value;
+
+		if( game == 'l4d2' ) {
+			motd_pos = frame_pos['_'+resolution][game]['motd'];
+			logo_pos = frame_pos['_'+resolution][game]['logo'];
+			logo.src = logo.src + '';
+			logo.style.display = 'block';
+			logo.style.top = logo_pos['top'] + 'px';
+			logo.style.left = logo_pos['left'] + 'px';
+			logo.style.width = logo_pos['width'] + 'px';
+			logo.style.height = logo_pos['height'] + 'px';
+		}
+		else {
+			motd_pos = frame_pos['_'+resolution][game];
+			logo.style.display = 'none';
+		}
+
+		screen.src = 'screen/' + game + '/' + resolution + '.jpg';
+		motd.src = 'index.html' + '?srv=' + server + ( vip ? '&vip=' + game : '' );
+
+		motd.style.top = motd_pos['top'] + 'px';
+		motd.style.left = motd_pos['left'] + 'px';
+		motd.style.width = motd_pos['width'] + 'px';
+		motd.style.height = motd_pos['height'] + 'px';
+	}
+
+	function resetAdv() {
+		d = new Date();
+		document.cookie = 'zozo_motd_adv_skip=1;path=/;' + 'expires=' + d.toGMTString();
+		motd.src += '';
+	}
+</script>
+
+</body>
+</html>

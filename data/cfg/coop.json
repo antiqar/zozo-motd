@@ -1,0 +1,45 @@
+{
+	"ip_plain" : "78.139.77.165:27016",
+	"ip_nice" : "ZO-ZO.ORG:27016",
+	"discuss_url" : "http://zo-zo.org/forum/threads/32/",
+	"translation" : {
+		"ru" : {
+			"server_list" : [
+				"Режим: Кооператив.",
+				"Максимум игроков: 8.",
+				"Лазерный прицел на всём оружии.",
+				"Награды за убийство Танков и Ведьм.",
+				"Обмен вещами (медикаменты и гранаты).",
+				"Огромные толпы зомби и бесконечные патроны.",
+				"Выжившие могут стрелять, когда повисли на краю.",
+				"Доступны AWP, Scout и любое рукопашное оружие.",
+				"Мутированные зомби с необычными способностями.",
+				"Особые зараженные: Толстяк, Плевальщица, Охотник.",
+				"Игроки выбирают голосованием следующую кампанию.",
+				"Поднятие и освобождение от Зараженных медикаментами.",
+				"Выжившие могут ползти, если упали, вид от третьего лица.",
+				"Держите гнома в руках, чтобы восстанавливать себе здоровье.",
+				"И многое другое..."
+			]
+		},
+		"en" : {
+			"server_list" : [
+				"Mode: Co-op.",
+				"Maximum players: 8.",
+				"Laser sight on any weapon.",
+				"Hold gnome in your arms for healing.",
+				"Mutated zombies with special abilities.",
+				"Rewards for killing Tanks and Witches.",
+				"Gear transfer (medicaments and bombs).",
+				"Special Infected: Boomer, Spitter, Hunter.",
+				"Players can choose next campaign by vote.",
+				"Survivors can shoot while hanging on ledge.",
+				"Huge amount of zombies and infinite ammo.",
+				"Unlocked AWP, Scout and all melee weapon.",
+				"Self-revive and releasing from Infected by medicaments.",
+				"Survivors can crawl with third-person view while incapped.",
+				"And much more..."
+			]
+		}
+	}
+}

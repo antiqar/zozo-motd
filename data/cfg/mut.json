@@ -1,0 +1,33 @@
+{
+	"ip_plain" : "78.139.77.165:27018",
+	"ip_nice" : "ZO-ZO.ORG:27018",
+	"discuss_url" : "http://zo-zo.org/forum/threads/34/",
+	"translation" : {
+		"ru" : {
+			"server_list" : [
+				"Мутация: Тааанк!",
+				"Максимум игроков: 8.",
+				"Лазерный прицел на всём оружии.",
+				"Награды за убийство Танков и Ведьм.",
+				"Выжившие могут стрелять, когда повисли на краю.",
+				"Доступны AWP, Scout и любое рукопашное оружие.",
+				"Игроки выбирают голосованием следующую кампанию.",
+				"Выжившие могут ползти, если упали, вид от третьего лица.",
+				"И многое другое..."
+			]
+		},
+		"en" : {
+			"server_list" : [
+				"Mutation: Taannkk!",
+				"Maximum players: 8.",
+				"Laser sight on any weapon.",
+				"Rewards for killing Tanks and Witches.",
+				"Players can choose next campaign by vote.",
+				"Survivors can shoot while hanging on ledge.",
+				"Unlocked AWP, Scout and all melee weapon.",
+				"Survivors can crawl with third-person view while incapped.",
+				"And much more..."
+			]
+		}
+	}
+}
