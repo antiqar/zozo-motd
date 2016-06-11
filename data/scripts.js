@@ -17,13 +17,12 @@ function init() {
 
 	if( isShowAdv() ) show_adv( true );
 	else show_content();
-
-	// window.addEventListener( 'resize', function () { calc_height() } );
 }
 
 function show_content() {
 	if( config.vip ) {
 		set_vip_link();
+		set_face_image();
 		show_box( menu_a[0] );
 		show_loading( false );
 	}
@@ -204,6 +203,12 @@ function set_vip_link() {
 	if( !config.hlxid ) return;
 	var vip_link = document.querySelector( '#vip .big-btn' );
 	vip_link.href = vip_link.getAttribute( 'href' ) + '?hlxid=' + config.hlxid;
+}
+
+function set_face_image() {
+	var face_img = document.querySelector( '#face' );
+	var random_number = Math.floor( Math.random() * config.face_max ) + 1;
+	face_img.src = 'data/img/face-' + config.vip + '-' + random_number + '.gif';
 }
 
 function set_gametracker() {
