@@ -1,0 +1,61 @@
+{
+	"ip_plain" : "148.251.130.211:27016",
+	"ip_nice" : "DE.ZO-ZO.ORG:27016",
+	"discuss_url" : "http://zo-zo.org/forum/threads/273/",
+	"translation" : {
+		"ru" : {
+			"server_list" : [
+				"Режим: Сражение.",
+				"Максимум игроков: 20.",
+				"До трех Танков одновременно.",
+				"Лазерный прицел на всём оружии.",
+				"Награды за убийство Танков и Ведьм.",
+				"Обмен вещами (медикаменты и гранаты).",
+				"Танк рычит и разбрасывает всех поблизости.",
+				"Усложненные пути прохождения некоторых карт.",
+				"Выжившие могут стрелять, когда повисли на краю.",
+				"Доступны AWP, Scout и любое рукопашное оружие.",
+				"Игроки выбирают голосованием следующую кампанию.",
+				"Толстяк шлёпает выживших и двигается во время рвоты.",
+				"Поднятие и освобождение от Зараженных медикаментами.",
+				"Громила толкает объекты и поворачивает во время разбега.",
+				"Выжившие могут ползти, если упали, вид от третьего лица.",
+				"Держите гнома в руках, чтобы восстанавливать себе здоровье.",
+				"Увеличена скорость поднятия, лечения, бега под адреналином.",
+				"Охотник может мгновенно убить Выжившего с большой высоты.",
+				"Жокей бьет током, прыгает вместе с жертвой и передвигается быстрее.",
+				"Плевальщица неуязвима несколько секунд после плевка и плюёт дальше.",
+				"Выбор Зараженных, освобождение жертвы, полет в режиме возрождения.",
+				"Курильщик может тащить жертву и двигаться, облако дыма наносит урон.",
+				"И многое другое..."
+			]
+		},
+		"en" : {
+			"server_list" : [
+				"Mode: Versus.",
+				"Maximum players: 20.",
+				"Laser sight on any weapon.",
+				"Up to a three Tanks in a row.",
+				"Hold gnome in your arms for healing.",
+				"Rewards for killing Tanks and Witches.",
+				"Tank can roar and push Survivors away.",
+				"Gear transfer (medicaments and bombs).",
+				"Players can choose next campaign by vote.",
+				"Survivors can shoot while hanging on ledge.",
+				"Unlocked AWP, Scout and all melee weapon.",
+				"Longer and harder path on some of the maps.",
+				"Boomer can slap Survivors and move while attacking.",
+				"Hunter can instantly kill Survivors from long distance.",
+				"Charger can push some objects and turn while running.",
+				"Self-revive and releasing from Infected by medicaments.",
+				"Survivors can crawl with third-person view while incapped.",
+				"Choosing of Infected, victim releasing, flying in ghost mode.",
+				"Increased speed of reviving, healing, movement on adrenaline.",
+				"Smoker can move while smoking, his cloud deal some damage.",
+				"Jockey can tase and stun Survivors, jump wiht victim and move faster.",
+				"Spitter gets invulnerability for a few seconds after spitting, can spit further.",
+				"And much more..."
+			]
+		}
+	}
+}
