@@ -44,14 +44,14 @@ body
 {
 	position: absolute;
 	top: -24px; left: 12px;
-	width: 132px; height: 80px;
+	width: 110px; height: 80px;
 	background: url(img/logo.png);
 	z-index: 1;
 }
 
 #logo a
 {
-	width: 132px; height: 80px;
+	width: 110px; height: 80px;
 }
 
 #menu
