@@ -214,14 +214,14 @@ function set_face_image() {
 function set_gametracker() {
 	var gt = document.querySelector( '#gt' );
 	if( gt.src ) return;
-	gt.src = 'http://cache.www.gametracker.com/server_info/' + config.ip_plain + '/b_560_95_1.png';
+	gt.src = 'https://cache.gametracker.com/server_info/' + config.ip_plain + '/b_560_95_1.png';
 	document.querySelector( '#ip' ).value = 'connect ' + config.ip_nice;
 }
 
 function set_discuss() {
 	var discuss = document.querySelector( '#server .big-btn' );
 	if( discuss.getAttribute( 'href' ) ) return;
-	discuss.href = config.discuss_url ? config.discuss_url : 'http://zo-zo.org/forum/';
+	discuss.href = config.discuss_url ? config.discuss_url : 'https://zozo.gg/forum/';
 }
 
 function calc_height( box_id ) {
