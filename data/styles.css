@@ -221,40 +221,14 @@ body
 	background-size: cover;
 	background-position: top;
 	box-shadow: inset 0 0 0 4px #0B42BD,
-				inset 0 0 0 8px #ffffe4;
+				inset 0 0 0 8px rgba(255,255,228,.5);
 	-webkit-transition: box-shadow ease 0.3s;
 }
 
 #adv a:hover
 {
 	box-shadow: inset 0 0 0 4px #155BF7,
-				inset 0 0 0 8px #ffffe4;
-}
-
-#adv a:hover .open
-{
-	background: #155BF7;
-	box-shadow: inset 0 0 0 2px #155BF7,
-				inset 0 0 0 4px #ffffe4,
-				0 0 0 2px #ffffe4;
-}
-
-#adv .open
-{
-	position: absolute;
-	bottom: 14px; right: 14px;
-	padding: 0px 50px 2px 50px;
-	line-height: 40px;
-	font-size: 40px;
-	font-style: normal;
-	background: #0B42BD;
-	color: #ffffe4;
-	box-shadow: inset 0 0 0 2px #155BF7,
-				inset 0 0 0 4px #ffffe4,
-				0 0 0 0px #ffffe4;
-	-webkit-transition-property: background, box-shadow;
-	-webkit-transition-timing-function: ease;
-	-webkit-transition-duration: 0.3s;
+				inset 0 0 0 8px rgba(255,255,228,1);
 }
 
 #adv .close
@@ -267,7 +241,12 @@ body
 	font-style: normal; font-weight: bold;
 	background: #D01818; color: #ffffe4;
 	border: 2px solid #ffffe4;
-	border-radius: 50%;
+	-webkit-transition: box-shadow ease 0.3s;
+}
+
+#adv .close:hover
+{
+	background: #b31616;
 }
 
 .box
