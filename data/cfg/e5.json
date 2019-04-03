@@ -1,0 +1,29 @@
+{
+	"ip_plain" : "148.251.130.211:27017",
+	"ip_nice" : "GER.ZOZO.GG:27017",
+	"discuss_url" : "https://zozo.gg/forum/threads/33/",
+	"translation" : {
+		"ru" : {
+			"server_list" : [
+				"Режим: Сражение.",
+				"Максимум игроков: 8.",
+				"Зараженные могут летать в режиме возрождения.",
+				"Доступны AWP, Scout и любое рукопашное оружие.",
+				"Игроки выбирают голосованием следующую кампанию.",
+				"Выжившие могут ползти, если упали, вид от третьего лица.",
+				"И многое другое..."
+			]
+		},
+		"en" : {
+			"server_list" : [
+				"Mode: Versus.",
+				"Maximum players: 8.",
+				"Infected can fly in ghost mode.",
+				"Players can choose next campaign by vote.",
+				"Unlocked AWP, Scout and all melee weapon.",
+				"Survivors can crawl with third-person view while incapped.",
+				"And much more..."
+			]
+		}
+	}
+}
