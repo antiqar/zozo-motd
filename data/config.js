@@ -1,9 +1,9 @@
 var config = {
 	lang : 'ru',
 	face_max : 2,
-	adv_img : 'data/img/adv/birthday-9-year.jpg',
-	adv_url : 'https://forum.zozo.gg/threads/1024/',
-	adv_end : '2019-01-18 15:00:00 GMT',
+	adv_img : 'data/img/adv/new-year-2021.jpg',
+	adv_url : 'https://forum.zozo.gg/threads/1205/',
+	adv_end : '2020-01-08 15:00:00 GMT',
 	translation : {
 		ru : {
 			server : 'Сервер',

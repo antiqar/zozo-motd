@@ -1,2 +1,2 @@
-ZO-ZO.ORG | MOTD
+ZOZO.GG | MOTD
 ====
