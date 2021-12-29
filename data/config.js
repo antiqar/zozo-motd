@@ -1,9 +1,9 @@
 var config = {
 	lang : 'ru',
 	face_max : 2,
-	adv_img : 'data/img/adv/l4d2-spring-cup-2021.jpg',
-	adv_url : 'https://zozo.gg/?p=12141',
-	adv_end : '2021-05-12 15:00:00 GMT',
+	adv_img : 'data/img/adv/new-year-2022.jpg',
+	adv_url : 'https://zozo.gg/?p=12182',
+	adv_end : '2022-01-16 15:00:00 GMT',
 	translation : {
 		ru : {
 			server : 'Сервер',
